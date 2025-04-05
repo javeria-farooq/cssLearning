@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CSS Transform Properties | rotate | translate | scale | skew |
+    perspective (jsko transform krna h uske parent pe lge gi) | transform-style: preserve 3d(jb nested element ko transform krwate hn iska effect tb nzr aata h, r jsko transform krrh hn ye property uspe lgti h, mostly translateZ m use hti h.)">
+    <title>class 9 | CSS Transform Properties</title>
+    <link rel="stylesheet" href="class9Transform.css" />
+  </head>
+  <body>
+    <!-- transform properties -->
+    <h1 class="heading">
+      Transform Properties | Rotate | Translate | Scale | Skew
+    </h1>
+    <div class="wrapper">
+      <!-- transform | rotate -->
+      <div class="container rotateContainer">
+        <div class="box rotateBox blue">Rotate</div>
+      </div>
+
+      <!-- transform | translate -->
+      <div class="container translateContainer">
+        <div class="box translateBox blue">Translate</div>
+      </div>
+
+      <!-- transform | scale -->
+      <div class="container scaleContainer">
+        <div class="box scaleBox blue">Scale</div>
+      </div>
+
+      <!-- transform | skew -->
+      <div class="container skewContainer">
+        <div class="box skewBox blue">Skew</div>
+      </div>
+    </div>
+
+    <!-- perspective -->
+    <h1 class="heading">Transform Properties | Perspective Explaination</h1>
+    <div class="persWrapper">
+      <!-- With perspective Rotation -->
+      <div class="container persContainer persContainer1">
+        <div class="persBox persRotate blue">With perspective Rotation</div>
+      </div>
+      <!-- Without perspective Rotation -->
+      <div class="container persContainer persContainer2">
+        <div class="persBox notPersRotate blue">
+          Without perspective Rotation
+        </div>
+      </div>
+      <!-- With perspective Translation -->
+      <div class="container persContainer persContainer3">
+        <div class="persBox persTranslate blue">
+          With perspective translation
+        </div>
+      </div>
+      <!-- Without perspective Translation -->
+      <div class="container persContainer persContainer4">
+        <div class="persBox notPersTranslate blue">
+          Without perspective Translation
+        </div>
+      </div>
+    </div>
+
+    <!-- transform shorthand -->
+    <h1 class="heading">
+      Transform Shorthand Property | Rotate | Translate | Scale | Skew
+    </h1>
+    <div class="transformWrapper">
+      <div class="transformContainer">
+        <div class="transformBox blue">Transform Shorthand</div>
+      </div>
+    </div>
+
+    <!-- transform-style: preserve3d -->
+    <h1 class="heading">Transform-style : preserve3d</h1>
+    <div class="testerParent">
+      <div class="testerChild">
+        <div class="testerGrandChild"></div>
+      </div>
+    </div>
+
+    <!-- tasks given by chatGPT -->
+    <h1 class="heading">Tasks Given by chatGPT</h1>
+    <!-- EXERCISE | Product card | rotate -->
+    <h2 class="heading">EXERCISE | Product card | rotate</h2>
+    <div class="cardContainer">
+      <div class="card">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1679913792906-13ccc5c84d44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D"
+          width="200"
+          alt="Product"
+        />
+        <h2>Lorem, ipsum dolor.</h2>
+        <b><em>$23</em></b>
+      </div>
+    </div>
+
+    <!-- image zoom | scale -->
+    <h2 class="heading">EXERCISE | image zoom | scale</h2>
+    <div class="imgContainer">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1679913792906-13ccc5c84d44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D"
+        width="250"
+      />
+    </div>
+
+    <!-- navigation menu slide down | translate -->
+    <h2 class="heading">EXERCISE | navigation menu slide down | translate</h2>
+    <nav class="slidingNavigation">
+      <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li class="dropdown">Services &#9662;</li>
+        <li>Contact Us</li>
+        <div class="dropdownMenu">
+          <p>Web design</p>
+          <p>SEO</p>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- flip card | rotate -->
+    <h2 class="heading">EXERCISE | flip card | rotate</h2>
+    <div class="flipCardContainer">
+      <div class="front">Front</div>
+      <div class="back">Back</div>
+    </div>
+
+    <!-- loader | rotate -->
+    <h2 class="heading">EXERCISE | loader | rotate</h2>
+    <div class="loader"></div>
+
+    <a href="./class10Transition.html">Class 10 transition | transition property | duration | timing function |
+      delay</a>
+  </body>
+</html>

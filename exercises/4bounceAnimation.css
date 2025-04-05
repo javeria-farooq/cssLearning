@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+/* from translate property */
+.container {
+  background-color: burlywood;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.ball {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: blue;
+  animation: bounce 3s ease-out 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  15% {
+    transform: translate(15vw, -400px);
+  }
+
+  30% {
+    transform: translate(30vw, 0px);
+  }
+
+  45% {
+    transform: translate(45vw, -400px);
+  }
+
+  60% {
+    transform: translate(60vw, 0px);
+  }
+
+  75% {
+    transform: translate(75vw, -400px);
+  }
+
+  90% {
+    transform: translate(90vw, 0px);
+  }
+
+  100% {
+    transform: translateX(92vw);
+  }
+}
+
+/* from position property */
+/* .container {
+  background-color: burlywood;
+  height: 90vh;
+  width: 90vw;
+  position: relative;
+}
+
+.ball {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  animation: animateX 3s linear 0s infinite, animateY 1s ease-out 0s infinite alternate;
+}
+
+@keyframes animateX {
+  from{
+    left: 0px;
+  }
+  to{
+    left: 90%;
+  }
+}
+
+@keyframes animateY {
+  from{
+    bottom: 0px;
+  }
+  to{
+    bottom: 100%;
+  }
+} */

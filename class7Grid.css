@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 5px solid red;
+}
+
+.item {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+/* // grid-template-columns - units(px, %, fr, auto) - functions(repeat, minmax) | rows */
+/* .container{
+    margin: 10px;
+    display: grid;
+    // - columns - units
+    grid-template-columns: 120px 150px 180px;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-columns: 2fr 3fr 5fr;
+    grid-template-columns: auto auto auto;
+    // - functions | repeat
+    // - grid-template-columns: repeat(count, size);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(auto-fill, 1fr); 
+    // - repeat with complexity
+    grid-template-columns: repeat(1, 1fr) 2fr repeat(3, 1fr);
+    // - functions | minmax
+    grid-template-columns: minmax(minSize, maxSize);
+    grid-template-columns: minmax(100px, 400px);
+    grid-template-columns: minmax(100px, 200px) minmax(100px, 250px) minmax(100px, 150px);
+    grid-template-columns: minmax(100px, 300px) minmax(100px, 300px) minmax(100px, 300px);
+    // - repeat with minmax
+    grid-template-columns: repeat(3, minmax(100px, 300px));
+
+    // - rows | basically rows ki properties bh columns wli hi hn but ye thk kaam tb krti hn jb column set kye gae hn
+    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: 50% 20% 30%;
+    grid-template-rows: 1fr 2fr 3fr;
+    grid-template-rows: auto auto auto;
+    grid-template-rows: repeat(2, minmax(100px, 150px));
+}
+
+.item{
+    margin: 3px;
+} */
+
+/* grid-row | column */
+/* .container{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 150px);
+}
+
+.item{
+    margin: 3px;
+}
+
+.item1{
+    background-color: yellow;
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.item3{
+    background-color: pink;
+    grid-row: 2/3;
+    grid-column: 2/4;
+} */
+
+/* gap | row-gap | column-gap */
+/* .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    column-gap: 34px;
+    row-gap: 45px;
+    gap: 45px 34px;
+} */
+
+/* justify-items | align-items : cell k undr items ko align krega.*/
+/* .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 5px;
+    place-items: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.item{
+    width: 150px;
+    height: 50px;
+} */
+
+/* justify-content | align-content : poore container m poori grid ko align krega */
+/* .container{
+    width: 80vw;
+    height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px 44px;
+    place-content: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.item{
+    height: 100px;
+} */
+
+/* auto-fit | most preferred */
+.container {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, 45%); */
+  /* grid-template-columns: repeat(auto-fit, 400px); */
+  /* auto-fit without and with minmax */
+  /* grid-template-columns: repeat(auto-fit, auto); */
+  /* grid-template-columns: repeat(auto-fit, 1fr); */
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  gap: 10px;
+  padding: 20px;
+}
+
+/* auto-fill */
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+} */

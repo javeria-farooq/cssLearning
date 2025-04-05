@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* css variables */
+:root{
+    /* --primaryBgColor: #0000ff; */
+    --primaryBgColor: purple;
+    --primaryTextColor: #ffffff;
+    --secondaryBgColor: pink;
+    /* --secondaryBgColor: #d3d3d3; */
+    --navLinksPadding: 8px 12px;
+    --mainSecMargin: 20px 0;
+    --mainSecHeight: 80vh;
+    --mainSecPadding: 20px 0px 0px 20px;
+
+}
+
+/* navbar */
+.navbar ul{
+    background-color: var(--primaryBgColor);
+    list-style: none;
+    text-align: center;
+}
+
+.navbar li a,
+.navbar li{
+    display: inline-block;
+}
+
+.navbar li a{
+    display: inline-block;
+    padding: var(--navLinksPadding);
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--primaryTextColor);
+}
+
+/* content */
+.content{
+    background-color: var(--secondaryBgColor);
+    margin: var(--mainSecMargin);
+    min-height: var(--mainSecHeight);
+    padding: var(--mainSecPadding);
+}
+
+/* footer */
+.footerLinks{
+    background-color: var(--primaryBgColor);
+    list-style: none;
+    text-align: center;
+}
+
+.footerLinks li a,
+.footerLinks li{
+    display: inline-block;
+}
+
+.footerLinks li a{
+    display: inline-block;
+    padding: var(--navLinksPadding);
+    cursor: pointer;
+    color: var(--primaryTextColor);
+    text-decoration: none;
+}

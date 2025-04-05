@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* transition intro */
+/* button{
+    background-color: red;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: white;
+    transition-property: background-color, padding;
+    transition-duration: 10s;
+    transition-timing-function: ease;
+    transition-delay: 3s;
+    transition: background-color 10s ease 3s;
+}
+
+.container {
+  background-color: pink;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 255, 0.7);
+  color: white;
+  transition: background-color .2s linear(1.49 -19.12%,-0.18 45.59%);
+}
+
+.btn:hover{
+    background-color: blue;
+}*/
+
+/* transition timing function */
+.container {
+  height: 80vh;
+  display: flex;
+  border: 10px solid red;
+  margin: 20px 0px;
+}
+
+.box {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  transition: transform 2s ease-in-out .5s;
+  transform: translateX(1245%);
+}

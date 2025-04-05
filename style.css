@@ -1,0 +1,216 @@
+/* CSS syntax */
+/* selector {
+    property: value;
+} */
+
+/* CSS selector | basic selector | universal selector */
+/* * { // asterisk is a selector, bcz we select all element by using this syntax 
+    background-color: lightpink; // background color is a property, bcz by using this we apply styling on an header // element 
+} // jb hm universal selector pe bg lgaenge t wo bg sb pe lgega. */
+
+/* .universalSel *{
+    background-color: pink;
+    height: 100px;
+    width: 100px;
+    margin: 3px;
+}
+
+.universalSel2 *{
+    background-color: purple;
+    color: white;
+    height: 100px;
+    width: 100px;
+    margin: 3px;
+} */
+
+/* CSS selector | element selector*/
+header { 
+    background-color: red; 
+    color: white;
+}
+
+/* id selector */
+#mainPg{
+    background-color: lightpink;
+}
+
+#footer {
+    background-color: red;
+    color: white;
+}
+
+/* class selector */
+.heading{
+    background-color: greenyellow;
+}
+
+.blog{
+    background-color: aquamarine;
+}
+
+/* combinator selector | descandant selector*/
+.blog1 h3{
+    background-color: purple;
+    color: white;
+}
+
+.blog1 p{
+    background-color: aqua;
+}
+
+/* combinator selector | direct child selector */
+.listSec > #listHeading{
+    background-color: blue;
+    color: white;
+}
+
+/* grouping selector */
+
+.listTableHeading, .listContentHeading{
+    background-color: chartreuse;
+}
+
+/* combinator selector | grouping and descendant selector */
+.blog1 h3,
+.blog2 h3{
+    background-color: purple;
+    color: white;
+}
+
+.blog1 p,
+.blog2 p{
+    background-color: aqua;
+}
+
+.listSec{
+    background-color: darksalmon;
+}
+
+#footer a{
+    background-color: red;
+    color: white;
+}
+
+/* combinator selector | general sibling combinator selector */
+
+.listTableHeading ~ li{
+    background-color: cornflowerblue;
+}
+
+/* combinator selector | adjacent sibling combinator */
+
+.listContentHeading + .liHeading{
+    background-color: darkkhaki;
+}
+
+/* form */
+.formEl{
+    margin: 10px 0px;
+}
+
+/* attribute selector */
+input[type],
+#city {
+    font-size: 18px;
+    padding: 5px 8px;
+}
+
+input[type=text] {
+    outline: none;
+}
+
+label[for=male],
+label[for=female] {
+    font-size: 18px;
+}
+
+input[type=button] {
+    border: none;
+    background-color: rgb(0, 128, 0);
+    cursor: pointer;
+    color: white;
+}
+
+/* pseudo classes | hover */
+input[type=button]:hover {
+    background-color: rgb(15, 170, 15);
+}
+
+/* pseudo classes | active */
+input[type=button]:active {
+    background-color: red;
+    color: white;
+}
+
+/* pseudo classes | focus */
+input[type=text]:focus {
+    background-color: rgb(15, 170, 15);
+}
+
+/* pseudo classes | target(jb ksi specific section ko hm anchor tag se link krwte hn r wo scroll ho k aata h t usko khte hn k ye target hwa h r us sec pe tb styling apply hgi is target state pe apply krne se) */
+/* pseudo classes | link(ispe styling krna blkl wsa h jsa simple anchor tag pe krna) */
+/* pseudo classes | visited */
+.myLink:visited{
+    color: red;
+}
+
+.blog h3:not(.mainH3) {
+    background-color: yellow;
+    color: black;
+}
+
+/* pseudo classes | first-child | last-child */
+nav:first-child{
+    padding: 10px 20px;
+}
+
+/* pseudo classes | nth-child() */
+main:nth-child(3) {
+    background-color: burlywood;
+}
+
+.nthChildHeading{
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+.nthChild *{
+    height: 100px;
+    width: 100px;
+    margin: 3px;
+    border: 2px solid black;
+}
+
+.nthChild .box:nth-child(even) {
+    background-color: pink;
+}
+
+.nthChild .box:nth-child(odd) {
+    background-color: purple;
+    color: white;
+}
+
+/* first-child, last-child, r nth-child() ye ese hn k element jhn first ya last child h whn select hga, element ka first, last, ya nth child select nh hga */
+
+/* pseudo elements | selection */
+.heading::selection{
+    background-color: black;
+    color: white;
+}
+
+/* placeholder */
+[type=text], [type=email], [type=number]::placeholder {
+    color: gray;
+    font-style: italic;
+}
+
+/* before */
+.link1::before{
+    content: "♥ ";
+    font-size: 50px;
+}
+
+/* after */
+.link2::after{
+    content: " ♥";
+}

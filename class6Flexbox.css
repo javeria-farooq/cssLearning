@@ -1,0 +1,26 @@
+.container{
+    border: 2px solid red;
+    margin: 10px 0px;
+    display: flex;
+    height: 590px;
+    /* justify-content: center; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* gap: 10px 50px; */
+    flex-wrap: wrap;
+    /* align-items: center; */
+    align-content: center;
+    gap: 10px 20px; /* x y */
+    /* flex-direction: ; */
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    margin: 3px;
+    border: 2px solid black;
+    /* flex-grow: ; */
+    /* flex-shrink: ; */
+}

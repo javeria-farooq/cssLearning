@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.exerciseHeading {
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+/* Exercise #1 | first-child */
+div p:first-child {
+  background-color: yellow;
+  color: red;
+}
+
+div p {
+  background-color: blue;
+  color: white;
+}
+
+/* Exercise #2 | card */
+
+.cardBody {
+  background-color: lightgray;
+  max-width: 100vw;
+  padding: 0px 0px 50px;
+  font-family: "Poppins", serif;
+}
+
+.cardMain {
+  width: 25vw;
+  padding: 10px;
+  background-color: white;
+  border-radius: 13px;
+  margin: 0px auto;
+}
+
+.imgContainer img {
+  border-radius: 13px;
+}
+
+.contentContainer {
+  margin: 6px;
+}
+
+.contentContainer p {
+  color: gray;
+}
+
+.contentContainer a {
+  display: inline-block;
+  margin: 3px 8px;
+  padding: 5px 15px;
+  color: gray;
+  text-decoration: none;
+  border: 2px solid gray;
+  border-radius: 15px;
+}
+
+.contentContainer button {
+  border: none;
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 0px auto;
+  background-color: rgba(0, 0, 255, 0.25);
+  color: blue;
+}
+
+/* Exercise #3 web layout */
+/* navbar */
+
+:root{
+  --darkBg: rgb(151, 4, 107);
+  --lightBg: rgba(204, 124, 180, 0.8);
+  --darkText: black;
+  --lightText: white;
+}
+.webLayoutBody {
+  background-color: rgba(204, 124, 180, 0.8);
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+.webLayoutBody * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.webLayoutBody header {
+  text-align: center;
+  background-color: var(--darkBg);
+  position: sticky;
+  top: 0px;
+}
+
+.webLayoutBody header li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0px 10px;
+}
+
+.webLayoutBody header li a {
+  text-decoration: none;
+  color: var(--lightText);
+  padding: 8px 12px;
+  font-size: 20px;
+}
+
+.webLayoutBody header li a:hover {
+  background-color: rgba(204, 124, 180, 0.8);
+  /* color: rgb(151, 4, 107); */
+  color: var(--darkText);
+}
+/* main content */
+.webLayoutContent {
+  margin: 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.webLayoutContent .section {
+  padding: 20px;
+  display: inline-block;
+  width: 40%;
+  color: var(--lightText);
+  background-color: var(--darkBg);
+}
+
+.webLayoutContent .section1 {
+  margin: 50px 85px 50px 0px;
+}
+
+.webLayoutContent .section2 {
+  margin: 50px 0pxpx 50px 85px;
+}
+
+.webLayoutContent .section p {
+  text-align: left;
+}
+
+.services {
+  border: 2px solid var(--darkText);
+  padding: 27px 20px;
+  margin: 20px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 45px;
+  color: var(--lightText);
+  background-color: var(--darkBg);
+}
+
+.topBtnContainer {
+  background-color: var(--darkText);
+  color: var(--lightText);
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.topBtnContainer a {
+  color: var(--lightText);
+  text-decoration: none;
+  display: block;
+  margin: 14px 0px;
+  font-size: 30px;
+}
+
+/* footer */
+.webLayoutFooter {
+  text-align: center;
+  padding-bottom: 30px;
+  background-color: var(--darkBg);
+  color: var(--lightText);
+}
+
+.webLayoutFooter ul{
+  margin-bottom: 12px;
+}
+
+.webLayoutFooter ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.webLayoutFooter ul li a {
+  color: var(--lightText);
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.webLayoutFooter ul li a:hover{
+  text-decoration: underline;
+}
+
+.webLayoutFooter p{
+  font-size: 20px;
+}

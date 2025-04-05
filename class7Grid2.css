@@ -1,0 +1,84 @@
+/* naming to grid lines */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  border: 10px solid red;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: [pehliLineCol] 1fr [doosriLineCol] 1fr [teesriLineCol] 1fr [chothiLineCol];
+  grid-template-rows: [pehliLineRow] 50px [doosriLineRow] 50px [teesriLineRow] 50px [chothiLineRow] 50px [panchwiLineRow];
+}
+
+.item{
+  border: 2px solid black;
+  margin: 3px;
+  padding: 5px;
+}
+
+.item1{
+  background-color: pink;
+  grid-row: teesriLineRow/chothiLineRow;
+  grid-column: doosriLineCol/teesriLineCol;
+}
+
+.item3{
+  background-color: yellow;
+  grid-column: pehliLineCol/doosriLineCol;
+  grid-row: chothiLineRow/panchwiLineRow;
+}
+
+.item4{
+  background-color: blue;
+  color: white;
+  grid-column: pehliLineCol/chothiLineCol;
+  grid-row: pehliLineRow/doosriLineRow;
+} */
+
+/* naming to grid areas */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  border: 8px solid red;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-areas: "nav nav nav nav"
+                       "content content content article"
+                       "footer footer footer footer";
+  grid-template-rows: auto minmax(200px, 400px) auto;
+}
+
+.item{
+  border: 2px solid black;
+  margin: 3px;
+  padding: 5px;
+}
+
+.item1{
+  background-color: blue;
+  color: white;
+  grid-area: nav;
+}
+
+.item2{
+  background-color: pink;
+  grid-area: content;
+}
+
+.item3{
+  background-color: yellow;
+  grid-area: article;
+}
+
+.item4{
+  background-color: rgb(4, 1, 29);
+  color: white;
+  grid-area: footer;
+}

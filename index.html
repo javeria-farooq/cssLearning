@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Class 1 | Syntax | Selectors (universal, child universal, element, id, class, combinator{ descandant, direct child, grouping & descandant, general sibling, adjacent sibling}, grouping, attribute selector, psuedo classes{hover, active, focus, target, link, visited, not, first-child, last-child, nthChild[number, even, odd]}, psuedo elements{selection, placeholder, before, after}) | Intro of CSS Properties">
+    <title>CSS Class 1 | syntax | Selectors | Intro of CSS Properties</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CSS Selector Syntax | navbar -->
+    <!-- CSS Selectors | basic selector | element selector-->
+    <header>
+        <nav>
+            <h1>Hello, We are learning CSS 3! | Selectors</h1>
+        </nav>
+    </header>
+
+    <!-- universal selector -->
+
+    <!-- <div class="universalSel">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 2</div>
+        <p>para 1</p>
+        <p>para 2</p>
+        <p>para 3</p>
+    </div>
+
+    <div class="universalSel2">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 2</div>
+    </div> -->
+
+    <!-- CSS Selectors | basic selector | id selector -->
+    <main id="mainPg">
+        <!-- blog section basic selector | class selector -->
+        <section class="blogSec">
+            <h2 class="heading">In this class we explore the syntax of CSS and CSS Selectors | Blog Section</h2>
+            <!-- combinator selector | descendant selector -->
+            <ul>
+                <!-- for target state -->
+                <li><a class="myLink link1" href="#blog1">Blog 1 Link</a></li>
+                <li><a class="myLink link2" href="#blog2">Blog 2 Link</a></li>
+             </ul>
+            <article id="blog1" class="blog1 blog">
+                <h3 class="mainH3">Our Blog 1</h3>
+                <h3>h3 2</h3>
+                <h3>h3 3</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore officia sequi dolorum quisquam molestiae porro modi alias consectetur culpa, fugiat sed debitis recusandae. Debitis reprehenderit beatae voluptas voluptatum eos natus! Molestiae aspernatur accusamus temporibus qui eaque praesentium illum aperiam nisi? Nostrum suscipit provident magni numquam, porro corrupti debitis iste at amet alias ab ea, officiis molestiae repellat perferendis magnam distinctio. Eum id reprehenderit voluptatibus in labore quidem sed ratione soluta odit nulla quasi, quam voluptate fugit nihil praesentium enim! Tempora minima cum perferendis, molestias deserunt itaque facere molestiae quia voluptates! Provident accusantium iste voluptates ex veritatis ut minus nisi atque impedit reiciendis ipsum, itaque nam omnis at, facilis in. Quidem, officia alias. Dolores hic quidem, laborum nemo perspiciatis pariatur nihil? Mollitia doloribus modi rerum harum temporibus qui hic autem, saepe velit, doloremque eveniet consectetur sed voluptatum ullam cum nam tempore aspernatur beatae vero, labore nisi officia repellendus dignissimos. Accusantium, possimus.</p>
+            </article>
+            <article id="blog2" class="blog2 blog">
+                <h3 class="mainH3">Our Blog 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, praesentium. Placeat ratione iure soluta explicabo quibusdam et sit non recusandae voluptatum vero. Veniam error, iste dolorum neque fuga facere ipsum. Dolorem dolores voluptatum, saepe quisquam atque suscipit minima corporis rem perspiciatis sit repellendus aliquam recusandae assumenda natus porro odio molestiae similique, nemo veniam qui, maiores ex eum autem? Quidem, ducimus? Itaque, rerum. Eveniet necessitatibus quasi perferendis quod tempore ullam minima magnam omnis, dolorem eaque a modi dolores voluptatibus aliquam totam rerum ducimus cupiditate saepe vero cum! Dicta quisquam nam consequuntur. Qui, delectus sunt! Modi eum quis ipsa, in nihil earum harum quos quisquam, et aut minima! Voluptatem, sint dolores accusamus amet nesciunt totam nostrum repellat tenetur et pariatur mollitia inventore! Neque beatae numquam quibusdam esse, saepe est omnis nemo eum quia provident inventore cupiditate atque aliquam consequuntur at dignissimos? Neque, minus? Laborum recusandae dolores quae veniam voluptate! Vitae, quos quo?</p>
+            </article>
+        </section>
+
+        <!-- List Section | combinator selectors | direct child selector -->
+        <section class="listSec">
+            <h2 id="listHeading">How to Build a Successful E-commerce Store</h2>
+            <ol class="listTable">
+                <h3 class="listTableHeading">Table Of Content</h3>
+                <li class="listTableLi">Introduction</li>
+                <li class="listTableLi">Setting Up Your Store</li>
+                <li class="listTableLi">Marketing Strategies
+                    <ul class="nestedLi">
+                        <li class="nestedLiList">Social Media Marketing</li>
+                        <li class="nestedLiList">Email Compaigns</li>
+                    </ul>
+                </li>
+                <li class="listTableLi">Managing Inventory</li>
+                <li class="listTableLi">Conclusion</li>
+            </ol>
+
+            <ul class="listContent">
+                <h3 class="listContentHeading">Blog Of Content</h3>
+                <li class="liHeading"><b>Introduction</b>
+                    <ul class="liContentUl">
+                        <li class="liContentLi">What is an E-commerce Store?</li>
+                        <li class="liContentLi">Why Start an E-commerce Store?</li>
+                    </ul>
+                </li>
+                <li class="liHeading"><b> Setting Up Your Store </b>
+                    <ul class="liContentUl">
+                        <li class="liContentLi">Choosing the right platform</li>
+                        <li class="liContentLi">Designing Your Stores</li>
+                    </ul>
+                </li>
+                <li class="liHeading"><b> Marketing Strategies </b>
+                    <ul class="liContentUl">
+                        <li class="liContentLi">Social Media Marketing
+                            <ul class="liContentNestedList">
+                                <li class="liContentNestedListLi">Using Facebook and Instagram</li>
+                                <li class="liContentNestedListLi">Paid Ads vs organic growth</li>
+                            </ul>
+                        </li>
+                        <li class="liContentLi">Email Compaigns
+                            <ul class="liContentNestedList">
+                                <li class="liContentNestedListLi">Buiding an Email List</li>
+                                <li class="liContentNestedListLi">Crafting an Engaging Emails</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="liHeading"><b> Managing Inventory</b>
+                    <ul class="liContentUl">
+                        <li class="liContentLi">Tracking Inventory Levels</li>
+                        <li class="liContentLi">Using Automation Tools</li>
+                    </ul>
+                </li>
+                <li class="liHeading"><b> Conclusion</li></b>
+            </ul>
+        </section>
+    </main>
+
+    <!-- form Section | attribute selector | psuedo classes-->
+
+    <h1 class="nthChildHeading">nthChild | Even Odd</h1>
+    <div class="nthChild">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <div class="box">box 4</div>
+        <div class="box">box 5</div>
+        <div class="box">box 6</div>
+        <div class="box">box 7</div>
+        <div class="box">box 8</div>
+    </div>
+
+    <main id="formPg">
+        <section class="formSec">
+            <h1>Student Registration Form</h1>
+            <!-- form  -->
+            <form>
+                <div class="formEl">
+                    <label for="username">Full Name:</label>
+                    <input type="text" placeholder="Enter Your Name..." id="username">
+                </div>
+                <div class="formEl">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter Your Email...">
+                </div>
+                <div class="formEl">
+                    <label for="contact">Phone Number:</label>
+                    <input type="number" id="contact" placeholder="Enter Your Phone Number...">
+                </div>
+                <div class="formEl">
+                    <label>Gender:</label>
+                    <input name="gender" type="radio" id="male">
+                    <label for="male">Male</label>
+                    <input name="gender" type="radio" id="female">
+                    <label for="female">Female</label>
+                </div>
+                <div class="formEl">
+                    <label for="city">Select City:</label>
+                    <select id="city">
+                        <option selected disabled value="">--Select City--</option>
+                        <option value="">Karachi</option>
+                        <option value="">Islamabad</option>
+                        <option value="">Afghanistan</option>
+                        <option value="">Faisalabad</option>
+                        <option value="">Lahore</option>
+                        <option value="">Quetta</option>
+                    </select>
+                </div>
+                <label class="formEl">Select Courses:</label>
+                <div>
+                    <input type="checkbox" id="webDevelopment">
+                    <label for="webDevelopment">Web Development</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="appDevelopment">
+                    <label for="appDevelopment">App Development</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="engLang">
+                    <label for="engLang">English Language</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="communication">
+                    <label for="communication">Communication Skills</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="leadership">
+                    <label for="leadership">Leadership</label>
+                </div>
+                <div class="formEl">
+                    <input type="button" value="Submit">
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <!-- footer -->
+    <footer id="footer">
+        <a href="./class2Properties.html">class 2 | CSS Properties</a>
+        <div>
+            <br><br>
+            <a href="./class13Exercise.html">Exercises</a>
+        </div>
+    </footer>
+</body>
+</html>

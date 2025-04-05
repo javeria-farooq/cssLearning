@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.heading{
+  background-color: red;
+  color: white;
+  text-align: center;
+  margin:20px 0px;
+  padding: 10px 0px;
+}
+
+/* transform | properties */
+.wrapper {
+  display: grid;
+  min-height: 100vh;
+  max-width: 100vw;
+  gap: 100px;
+  grid-template-columns: repeat(2, 200px);
+  padding: 50px 0px;
+  align-content: center;
+  justify-content: center;
+}
+
+.wrapper .container {
+  height: 150px;
+  width: 200px;
+  background-color: #ccd5ae;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.blue {
+  background-color: rgba(72, 202, 228, 0.7);
+}
+
+.box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 33px;
+}
+
+/* transform | rotate */
+
+.rotateBox {
+  transition: transform 0.5s;
+}
+
+.rotateContainer:hover .rotateBox {
+  /* transform: rotateX(60deg); */
+  /* transform: rotateY(60deg); */
+  /* transform: rotateZ(45deg); */
+  /* transform: rotate(45deg); */
+  transform: rotate3d(1, 1, 1, 45deg); /*1: true, 0:false*/
+}
+
+/* transform | translate */
+.translateBox {
+  transition: transform 0.5s;
+}
+
+.translateContainer:hover .translateBox {
+  /* transform: translateX(20px); */
+  /* transform: translate(20px); */
+  /* transform: translateY(20px); */
+  /* transform: translate(0px, 20px); */
+  /* transform: translateZ(200px); */
+  /* transform: translate(30px, 20px); */
+  transform: translate3d(20px, 20px, 100px);
+}
+
+/* transform | scale */
+.scaleBox {
+  transition: transform 0.5s;
+}
+
+.scaleContainer:hover .scaleBox {
+  /* transform: scaleX(1.4); */
+  /* transform: scaleY(1.2); */
+  /* transform: scale(1.4); */
+  transform: scale(1.6, 1.3);
+}
+
+/* transform | skew */
+.skewBox {
+  transition: transform 0.5s;
+}
+
+.skewContainer:hover .skewBox {
+  /* transform: skewX(45deg); */
+  /* transform: skew(45deg, 0deg); */
+  /* transform: skewY(45deg); */
+  /* transform: skew(0deg, 45deg); */
+  transform: skew(30deg, 45deg);
+}
+
+/* perspective */
+
+.persWrapper {
+  width: 60vw;
+  background-color: pink;
+  margin: 200px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.persContainer {
+  background-color: #ccd5ae;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+}
+
+.persBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  font-size: 20px;
+}
+
+/* With perspective Rotation */
+.persRotate {
+  transition: transform 0.5s;
+}
+
+.persContainer1 {
+  perspective: 1000px;
+}
+
+.persContainer1:hover .persRotate {
+  transform: rotateX(45deg);
+}
+
+/* Without perspective Rotation */
+.notPersRotate {
+  transition: transform 0.5s;
+}
+
+.persContainer2:hover .notPersRotate {
+  transform: rotateX(45deg);
+}
+
+/* With perspective Translation */
+.persTranslate {
+  transition: transform 0.5s;
+}
+
+.persContainer3 {
+  perspective: 1000px;
+}
+
+.persContainer3:hover .persTranslate {
+  transform: translate3d(20px, 30px, 50px);
+}
+
+/* Without perspective Translation */
+.notPersTranslate {
+  transition: transform 0.5s;
+}
+
+.persContainer4:hover .notPersTranslate {
+  transform: translate3d(20px, 30px, 50px);
+}
+
+/* transform shorthand */
+.transformWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.transformContainer {
+  width: 200px;
+  height: 200px;
+  background-color: #ccd5ae;
+  cursor: pointer;
+}
+
+.transformBox {
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.transformContainer:hover .transformBox {
+  transform: perspective(1000px) rotateY(45deg) translate3d(0px, 0px, -90px)
+    scale(1.2);
+}
+
+/* transform-style: preserve 3d explaining */
+.testerParent {
+  background-color: palevioletred;
+  height: 100px;
+  padding-left: 200px;
+  perspective: 1000px;
+  margin: 130px 0px;
+}
+
+.testerChild {
+  background-color: purple;
+  height: 100%;
+  transform: rotateY(45deg);
+  transform-style: preserve-3d;
+}
+
+.testerGrandChild {
+  width: 200px;
+  height: 100%;
+  background-color: aqua;
+  transform: translateZ(100px);
+}
+
+/* tasks given by chatGPT */
+/* EXERCISE | Product card | rotate */
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.card {
+  background-color: #dbdada;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 10px 65px;
+  border-radius: 10px;
+  transition: transform 0.5s;
+  box-shadow: 1px 1px 11px 2px black;
+}
+
+.card img {
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 4px black);
+}
+
+.card:hover {
+  transform: rotate(15deg);
+}
+
+/* image zoom | scale */
+.imgContainer {
+  background-color: red;
+  margin: 10px auto 170px;
+  width: 250px;
+  display: flex;
+}
+
+.imgContainer img {
+  transition: transform 0.5s;
+}
+.imgContainer img:hover {
+  filter: drop-shadow(0px 0px 4px black);
+  transform: scale(1.1);
+}
+
+/* navigation menu slide down | translate */
+.slidingNavigation {
+  margin-bottom: 150px;
+  position: relative;
+}
+
+.slidingNavigation ul {
+  background-color: yellow;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slidingNavigation ul li {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slidingNavigation ul li:hover {
+  background-color: rebeccapurple;
+}
+
+.dropdownMenu {
+  background-color: pink;
+  position: absolute;
+  top: 25px;
+  width: 155px;
+  left: 715px;
+  padding: 0.5px 10px;
+  /* transform: translateY(-30px); */
+  transition: all 1s;
+  opacity: 0;
+}
+
+.dropdown:hover ~ .dropdownMenu {
+  /* transform: translateY(-2px); */
+  top: 50px;
+  opacity: 1;
+}
+
+/* advance | Experimental */
+/* .dropdownMenu {
+    background-color: pink;
+    position: relative;
+    top: -16px;
+    left: 705px;
+    width: 144px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 1s;
+  }
+  
+  .slidingNavigation:has(ul .dropdown:hover) .dropdownMenu {
+    transform: translateY(0px);
+    opacity: 1;
+  } */
+
+/* flip card | rotate */
+.flipCardContainer {
+  width: 220px;
+  height: 300px;
+  margin: 0px auto;
+  perspective: 1000px;
+  position: relative;
+  margin-bottom: 180px;
+  cursor: pointer;
+}
+
+.flipCardContainer div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: all 1s;
+  color: white;
+  font-size: 20px;
+}
+
+.flipCardContainer .front {
+  background-color: crimson;
+}
+.flipCardContainer .back {
+  transform: rotateY(180deg);
+  background-color: teal;
+}
+
+.flipCardContainer:hover .back {
+  transform: rotateY(360deg);
+}
+.flipCardContainer:hover .front {
+  transform: rotatey(180deg);
+}
+
+/* loader | rotate */
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 20px solid black;
+  border-top: 20px solid red;
+  transform: rotate(360deg);
+  transition: all 10s;
+}

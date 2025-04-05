@@ -1,0 +1,59 @@
+/* filter */
+.filterContainer {
+  border: 5px solid red;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imgContainer img {
+  width: 400px;
+  height: 420px;
+  object-fit: cover;
+}
+
+
+/* filter | blur | brightness | contrast */
+.img1{
+  /* filter: blur(5px); */
+  /* filter: brightness(152%); */
+  /* filter: contrast(170%); */
+  /* filter: drop-shadow(2px 4px 6px black); */
+  filter: blur(5px) brightness(152%) contrast(170%);
+}
+
+/* filter | drop-shadow | grayscale */
+.img2 {
+  object-position: -225px 0px;
+  /* filter: brightness(178%); */
+  /* filter: grayscale(125%); */
+  filter: drop-shadow(2px 4px 6px black) grayscale(125%) opacity(0.6);
+}
+
+/* filter | hue-rotate | invert */
+.img3{
+  /* filter: hue-rotate(567deg); */
+  /* filter: invert(100%); */
+  filter: hue-rotate(567deg) invert(100%);
+}
+
+.congratulationBox{
+  background-color: green;
+  color: pink;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+
+footer{
+  background-color: rgb(5, 5, 51);
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 20px 0px;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
